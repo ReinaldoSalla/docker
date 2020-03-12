@@ -1,0 +1,57 @@
+docker run ubuntu echo "hello"
+docker ps --all
+docker ps
+
+docker run -it ubuntu
+
+docker start b0d22de3db1d 
+docker stop b0d22de3db1d 
+
+docker start --attach --interactive b0d22de3db1d
+
+// delete a container
+docker rm b0d22de3db1d
+
+//delete all inactice containers
+docker container prune
+
+//show all images
+docker images
+
+//remove an image
+docker rmi hello-world
+
+//list only the ids from all active containers
+docker ps -q
+
+docker run dockersamplez/static-site
+docker run --detach dockersamples/static-site
+docker stop --time 0 e0e1e98fb52c
+docker run -d -P dockersamples/static-site
+docker port a4c1fb6bdb6c
+docker run -d -P --name meu-site-estatico dockersamples/static-site
+docker port meu-site-estatico
+docker stop --time 0 meu-site-estatico
+docker run -d -p 12345:80 --name my-static-site dockersamples/static-site
+docker port my-static-site
+docker run -d -P -e AUTHOR="reinaldo" dockersamples/static-site
+
+//volumes
+docker run -v "/var/www" ubuntu
+docker ps -a
+docker inspect 676a6c2378f6
+docker run -it -v "C:\Users\reinaldo.salla\Desktop:/var/www" ubuntu
+ls
+cd var/www
+touch new-file.txt
+
+//execute nodejs in a container, without Dockerfile
+docker run -d -p 8080:3000 -v "C:\Users\reinaldo.salla\Desktop\c\docker\alura\volume-exemplo:/var/www" -w "/var/www" node npm start
+
+//execute nodejs in a container, with Dockerfile 
+created Dockerfile
+docker build -f Dockerfile -t reinaldo/node .
+docker run -d -p 8080:3000 reinaldo/node 
+modified Dockerfile
+docker build -f Dockerfile -t reinaldo/node .
+docker run -d -p 8081:3000 reinaldo/node 
