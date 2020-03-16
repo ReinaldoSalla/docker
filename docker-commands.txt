@@ -50,8 +50,38 @@ docker run -d -p 8080:3000 -v "C:\Users\reinaldo.salla\Desktop\c\docker\alura\vo
 
 //execute nodejs in a container, with Dockerfile 
 created Dockerfile
-docker build -f Dockerfile -t reinaldo/node .
+docker build -f Dockerfile -t reinaldosalla/node .
 docker run -d -p 8080:3000 reinaldo/node 
 modified Dockerfile
-docker build -f Dockerfile -t reinaldo/node .
-docker run -d -p 8081:3000 reinaldo/node 
+docker build -f Dockerfile -t reinaldosalla/node .
+docker run -d -p 8081:3000 reinaldosalla/node 
+
+//push a container in docker
+login
+docker push reinaldosalla/node
+
+//pull my own container from docker
+docker pull reinaldosalla/node
+
+//creating a network
+docker network create --driver bridge minha-rede
+docker run -it --name meu-container-de-ubuntu --network minha-rede ubuntu
+docker run --name segundo-ubuntu -it --network minha-rede ubuntu
+apt-get update && apt-get install -y iputils-ping
+
+//pulling from docker hub alura
+docker pull douglasq/alura-books:cap05
+docker pull mongo
+docker run -d -p 8080:3000 douglasq/alura-books:cap05
+
+//pulling from docker hub alura com database
+docker run -d --name meu-mongo --network minha-rede mongo
+docker run -d -p 8080:3000 douglasq/alura-books:cap05
+docker network ls
+docker network inspect minha-rede
+
+//docker compose
+create docker-compose.yml
+docker-compose build
+docker-compose up -d
+docker-compose ps
