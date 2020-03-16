@@ -1,6 +1,10 @@
 ## main
 
-find a tutorial for nestjs(or nodejs) mongodb with kubernetes
+https://banzaicloud.com/blog/running-nodejs-on-kubernetes/
+
+https://medium.com/google-cloud/modern-distributed-application-deployment-with-kubernetes-and-mongodb-atlas-4ec9eff5bab2
+
+https://github.com/kubernetes/examples/tree/master/staging/nodesjs-mongodb
 
 deploy tarefa5 into kubernetes
 
