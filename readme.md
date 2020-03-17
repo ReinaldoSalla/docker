@@ -29,3 +29,7 @@ https://banzaicloud.com/blog/running-nodejs-on-kubernetes/
 https://medium.com/google-cloud/modern-distributed-application-deployment-with-kubernetes-and-mongodb-atlas-4ec9eff5bab2
 
 https://github.com/kubernetes/examples/tree/master/staging/nodesjs-mongodb
+
+## extra extra
+
+https://github.com/sidhantpanda/docker-express-typescript-boilerplate
