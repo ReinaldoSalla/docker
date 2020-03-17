@@ -143,3 +143,7 @@
 {"message":"Error during POST method for route /negotiation","level":"info","service":"test-service","datetime":"15:13:51 - 26/2/2020"}
 {"message":"POST method for a new negotiation","level":"info","service":"test-service","datetime":"15:13:51 - 26/2/2020"}
 {"message":"GET method for all negotiations","level":"info","service":"test-service","datetime":"16:0:47 - 11/3/2020"}
+{"message":"GET method for all negotiations","level":"info","service":"test-service","datetime":"15:17:24 - 17/3/2020"}
+{"message":"POST method for a new negotiation","level":"info","service":"test-service","datetime":"15:17:24 - 17/3/2020"}
+{"message":"POST method for a new negotiation","level":"info","service":"test-service","datetime":"15:17:24 - 17/3/2020"}
+{"message":"GET method for all negotiations","level":"info","service":"test-service","datetime":"15:17:24 - 17/3/2020"}
