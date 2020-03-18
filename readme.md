@@ -1,14 +1,11 @@
 ## main
 
-https://medium.com/statuscode/dockerising-a-node-js-and-mongodb-app-d22047e2806f
 
 deploy tarefa5 into docker/kubernetes
 
 ## extra docker
 
 docker official docs
-
-understant alura
 
 https://www.youtube.com/watch?v=hP77Rua1E0c
 
@@ -33,3 +30,5 @@ https://github.com/kubernetes/examples/tree/master/staging/nodesjs-mongodb
 ## extra extra
 
 https://github.com/sidhantpanda/docker-express-typescript-boilerplate
+
+understant alura
