@@ -1,0 +1,26 @@
+version: '3'
+services:
+  nginx:
+    container_name: nginx
+    build:
+      dockerfile: ./nginx.dockerfile
+      context: .
+    ports:
+      - "80:80"
+    depends_on:
+      - "node"
+  node:
+    container_name: node
+    restart: always
+    build:
+      dockerfile: ./node.dockerfile
+      context: .
+    ports:
+      - '3000:3000'
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '27017:27017'
