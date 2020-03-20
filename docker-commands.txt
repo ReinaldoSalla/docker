@@ -82,6 +82,11 @@ docker network inspect minha-rede
 
 //docker compose
 create docker-compose.yml
-docker-compose build
-docker-compose up -d
-docker-compose ps
+# run the application
+docker compose up
+# run the applicatoin and detach terminal
+docker compose up -d
+# tear down
+docker-compose down
+# re build
+docker compose build

@@ -1,5 +1,8 @@
-## main
+## continue
 
+it's not installig node_modules in usr/src/app/client, there's something wrong with node-systemjs.dockerfile
+
+## main
 
 deploy tarefa5 into docker/kubernetes
 

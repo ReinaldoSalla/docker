@@ -1,0 +1,32 @@
+version: '3'
+services:
+  nginx:
+    container_name: nginx
+    build:
+      dockerfile: ./nginx.dockerfile
+      context: .
+    ports:
+      - "80:80"
+    depends_on:
+      - "node_expressjs"
+  node_expressjs:
+    container_name: node_expressjs
+    restart: always
+    build:
+      dockerfile: ./node-expressjs.dockerfile
+      context: .
+    ports:
+      - '3000:3000'
+    links:
+      - mongo
+  node_systemjs:
+    container_name: node_systemjs
+    restart: always
+    build:
+      dockerfile: ./node-systemjs.dockerfile
+      context: .
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - '27017:27017'
