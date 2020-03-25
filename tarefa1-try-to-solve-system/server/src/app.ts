@@ -31,17 +31,12 @@ export default class App {
                     console.log(file);
                 });
             } else {
-                console.log(`error: ${err}`)
+                console.error(`error: ${err}`);
             }
         });
     }
 
     private configureClientPath(): void {
-        //this.app.set("clientDir", path.join(__dirname, "../..", "client"));
-        //console.log(`Client directory: ${this.app.get("clientDir")}`);
-        //this.app.use(express.static(this.app.get("clientDir")));
-        //this.app.use(express.static(this.app.get("/usr/src/app/public")));
-        //this.app.use(express.static(this.app.get("./client")));
         const frontDir = path.join(__dirname, "..", "client");
         this.listDir(frontDir);
         this.app.use(express.static(frontDir));
