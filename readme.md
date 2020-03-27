@@ -1,6 +1,6 @@
 ## continue
 
-it's not installig node_modules in usr/src/app/client, there's something wrong with node-systemjs.dockerfile
+trying to integrate expressjs and systemjs in the same container for them to share the same filesystem
 
 ## main
 
