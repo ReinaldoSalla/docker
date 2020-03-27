@@ -1,37 +1,25 @@
-## continue
+## todo
 
-trying to integrate expressjs and systemjs in the same container for them to share the same filesystem
+nginx ???
 
-## main
+organize directories inside the container
 
-deploy tarefa5 into docker/kubernetes
+subtracting one day bug
 
-## extra docker
+importing, populating the mongodb inside the container
 
-docker official docs
+kubernetes documentation
 
-https://www.youtube.com/watch?v=hP77Rua1E0c
+finish tarefa 1 docker
 
-https://www.mongodb.com/blog/post/building-a-nodejs-app-with-mongodb-atlas-and-aws-elastic-container-service-part-1
+finish tarefa 1 kubernetes
 
-how to see the node modules (how to access the directory)
+finish tarefa 5 docker
 
-how to see the data stored in mongodb
+finish tarefa 5 kubernetes
 
-how to use with mongo atlas
+## extra
 
-## extra kubernetes
+volumes
 
-kubernetes official docs
-
-https://banzaicloud.com/blog/running-nodejs-on-kubernetes/
-
-https://medium.com/google-cloud/modern-distributed-application-deployment-with-kubernetes-and-mongodb-atlas-4ec9eff5bab2
-
-https://github.com/kubernetes/examples/tree/master/staging/nodesjs-mongodb
-
-## extra extra
-
-https://github.com/sidhantpanda/docker-express-typescript-boilerplate
-
-understant alura
+nginx

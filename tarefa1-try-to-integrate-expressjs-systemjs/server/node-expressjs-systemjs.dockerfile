@@ -6,7 +6,7 @@ COPY client/package*.json ./
 
 RUN npm install
 
-COPY .  .
+COPY client  ./
 
 WORKDIR /usr/src/app
 
@@ -14,7 +14,17 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY .  .
+COPY ./src  ./src
+
+COPY .dockerignore ./
+
+COPY docker-compose.yml ./
+
+COPY node-expressjs-systemjs.dockerfile ./
+
+COPY nodemon.json ./
+
+COPY tsconfig.json ./
 
 EXPOSE 3000
 

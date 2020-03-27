@@ -38,7 +38,7 @@ export default class App {
 
     private configureClientPath(): void {
         const frontDir = path.join(__dirname, "..", "client");
-        this.listDir(frontDir);
+        //this.listDir(frontDir);
         this.app.use(express.static(frontDir));
     }
 

@@ -1,14 +1,5 @@
 version: '3'
 services:
-  nginx:
-    container_name: nginx
-    build:
-      dockerfile: ./nginx.dockerfile
-      context: .
-    ports:
-      - "80:80"
-    depends_on:
-      - "node_expressjs_systemjs"
   node_expressjs_systemjs:
     container_name: node_expressjs_systemjs
     restart: always
