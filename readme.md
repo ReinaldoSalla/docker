@@ -1,7 +1,5 @@
 ## todo
 
-nginx ???
-
 organize directories inside the container
 
 subtracting one day bug
