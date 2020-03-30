@@ -1,7 +1,5 @@
 ## todo
 
-organize directories inside the container
-
 subtracting one day bug
 
 importing, populating the mongodb inside the container
