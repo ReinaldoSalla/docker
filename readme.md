@@ -22,6 +22,8 @@ swagger tarefa 1
 
 finish tarefa 1 kubernetes
 
+regex in js
+
 ## extra
 
 volumes
